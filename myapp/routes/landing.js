@@ -5,7 +5,8 @@ var router = express.Router();
 
 let landing= require('../controller/landing')
 
-
 router.get('/', landing.getlanding);
+
+router.post('/',landing.submit_lead)
 
 module.exports = router;
